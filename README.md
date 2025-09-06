@@ -4,6 +4,7 @@ Scalable Autoregressive 3D Molecule Generation
 
 [arXiv paper](https://arxiv.org/abs/2505.13791) | [Colab demo](...)
 
+![Animated Molecule Generation](figures/anim.gif)
 
 Setup:
 ```
