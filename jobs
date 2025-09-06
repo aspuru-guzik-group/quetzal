@@ -1,0 +1,18 @@
+# commented lines will be ignored by submit.sh
+# this file is useful for submitting many jobs at a time
+
+python train.py --name=qm9_run --debug # use defaults
+
+# python train.py --name=ds_qm9_small_w512 --packlen=128 --packdepth=6 --bsz=180 --lr=4e-4 --n_embd=512 --n_layer=8 --n_head=8 --diff_w=512 --max_epochs=2000 --vis_every_n_epochs=100
+# python train.py --name=ds_qm9_small_w1024 --packlen=128 --packdepth=6 --bsz=180 --lr=4e-4 --n_embd=512 --n_layer=8 --n_head=8 --diff_w=1024 --max_epochs=2000 --vis_every_n_epochs=100
+# python train.py --name=ds_qm9_small_w1536 --packlen=128 --packdepth=6 --bsz=180 --lr=4e-4 --n_embd=512 --n_layer=8 --n_head=8 --diff_w=1536 --max_epochs=2000 --vis_every_n_epochs=100
+# python train.py --name=ds_qm9_base_w512 --packlen=128 --packdepth=6 --bsz=180 --lr=4e-4 --n_embd=640 --n_layer=10 --n_head=10 --diff_w=512 --max_epochs=2000 --vis_every_n_epochs=100
+# python train.py --name=ds_qm9_base_w1024 --packlen=128 --packdepth=6 --bsz=180 --lr=4e-4 --n_embd=640 --n_layer=10 --n_head=10 --diff_w=1024 --max_epochs=2000 --vis_every_n_epochs=100
+# python train.py --name=ds_qm9_base_w1536 --packlen=128 --packdepth=6 --bsz=180 --lr=4e-4 --n_embd=640 --n_layer=10 --n_head=10 --diff_w=1536 --max_epochs=2000 --vis_every_n_epochs=100
+# python train.py --name=ds_qm9_big_w512 --packlen=128 --packdepth=6 --bsz=180 --lr=4e-4 --n_embd=768 --n_layer=12 --n_head=12 --diff_w=512 --max_epochs=2000 --vis_every_n_epochs=100
+# python train.py --name=ds_qm9_big_w1024 --packlen=128 --packdepth=6 --bsz=180 --lr=4e-4 --n_embd=768 --n_layer=12 --n_head=12 --diff_w=1024 --max_epochs=2000 --vis_every_n_epochs=100
+
+# including batched generation
+# python generate.py --ckpt=logs/quetzal/ds_qm9_small_w512/checkpoints/epoch=1999-step=188000.ckpt --name=ds_qm9_small_w512_rep0 --device=cuda --num_samples=10000 --num_chunks=1 --diff_steps=60 --max_len=32
+# python generate.py --ckpt=logs/quetzal/ds_qm9_small_w512/checkpoints/epoch=1999-step=188000.ckpt --name=ds_qm9_small_w512_rep1 --device=cuda --num_samples=10000 --num_chunks=1 --diff_steps=60 --max_len=32
+# python generate.py --ckpt=logs/quetzal/ds_qm9_small_w512/checkpoints/epoch=1999-step=188000.ckpt --name=ds_qm9_small_w512_rep2 --device=cuda --num_samples=10000 --num_chunks=1 --diff_steps=60 --max_len=32

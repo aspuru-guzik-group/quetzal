@@ -1,0 +1,153 @@
+<img id="img_A"><script src="https://3Dmol.org/build/3Dmol-min.js"></script><script src="https://3Dmol.org/build/3Dmol.ui-min.js"></script><div id="3dmolviewer_17467103503104272"  style="position: relative; width: 2880px; height: 2880px;">
+        <p id="3dmolwarning_17467103503104272" style="background-color:#ffcccc;color:black">3Dmol.js failed to load for some reason.  Please check your browser console for error messages.<br></p>
+        </div>
+<script>
+
+var loadScriptAsync = function(uri){
+  return new Promise((resolve, reject) => {
+    //this is to ignore the existence of requirejs amd
+    var savedexports, savedmodule;
+    if (typeof exports !== 'undefined') savedexports = exports;
+    else exports = {}
+    if (typeof module !== 'undefined') savedmodule = module;
+    else module = {}
+
+    var tag = document.createElement('script');
+    tag.src = uri;
+    tag.async = true;
+    tag.onload = () => {
+        exports = savedexports;
+        module = savedmodule;
+        resolve();
+    };
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+});
+};
+
+if(typeof $3Dmolpromise === 'undefined') {
+$3Dmolpromise = null;
+  $3Dmolpromise = loadScriptAsync('https://cdnjs.cloudflare.com/ajax/libs/3Dmol/2.4.2/3Dmol-min.js');
+}
+
+var viewer_17467103503104272 = null;
+var warn = document.getElementById("3dmolwarning_17467103503104272");
+if(warn) {
+    warn.parentNode.removeChild(warn);
+}
+$3Dmolpromise.then(function() {
+var viewergrid_17467103503104272 = null;
+viewergrid_17467103503104272 = $3Dmol.createViewerGrid(document.getElementById("3dmolviewer_17467103503104272"),{rows: 3, cols: 3, control_all: true},{backgroundColor:"white"});
+viewer_17467103503104272 = viewergrid_17467103503104272[0][0];
+viewergrid_17467103503104272[0][0].zoomTo();viewergrid_17467103503104272[0][1].zoomTo();viewergrid_17467103503104272[0][2].zoomTo();viewergrid_17467103503104272[1][0].zoomTo();viewergrid_17467103503104272[1][1].zoomTo();viewergrid_17467103503104272[1][2].zoomTo();viewergrid_17467103503104272[2][0].zoomTo();viewergrid_17467103503104272[2][1].zoomTo();viewergrid_17467103503104272[2][2].zoomTo();	viewergrid_17467103503104272[0][0].addModel("17\n\nO 0.418462 -2.488397 -1.014359\nC 0.472351 -1.611381 -0.224584\nC 1.393514 -0.451454 0.089432\nC 1.255607 0.702316 -0.938477\nC 0.037104 1.314992 -0.074726\nC 0.239106 0.146725 0.933340\nC -0.658853 -1.084401 0.786146\nC -2.052367 -0.962474 0.452398\nC -3.179082 -0.791082 0.138223\nH 2.405837 -0.670611 0.435347\nH 2.113666 1.338371 -0.967552\nH 1.031087 0.347130 -1.938544\nH 0.304843 2.294204 0.322545\nH -0.904595 1.361736 -0.551896\nH 0.374388 0.428485 1.994886\nH -0.558278 -1.765847 1.645295\nH -4.218185 -0.696112 -0.133520\n","xyz");
+	viewergrid_17467103503104272[0][0].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_17467103503104272[0][0].zoomTo();
+	viewergrid_17467103503104272[0][1].zoomTo();
+	viewergrid_17467103503104272[0][2].zoomTo();
+	viewergrid_17467103503104272[1][0].zoomTo();
+	viewergrid_17467103503104272[1][1].zoomTo();
+	viewergrid_17467103503104272[1][2].zoomTo();
+	viewergrid_17467103503104272[2][0].zoomTo();
+	viewergrid_17467103503104272[2][1].zoomTo();
+	viewergrid_17467103503104272[2][2].zoomTo();
+	viewergrid_17467103503104272[0][1].addModel("17\n\nO 0.427105 -2.477329 -1.000913\nC 0.449143 -1.601162 -0.200785\nC 1.458891 -0.595700 0.296560\nC 1.532999 0.614433 -0.686947\nC 0.279693 1.320744 0.066879\nC -1.026762 1.208355 -0.691178\nC -1.591101 -0.005984 -0.426356\nC -0.708225 -0.774017 0.558854\nC 0.389676 0.236982 1.042259\nH 2.400522 -0.946297 0.708943\nH 2.447890 1.165141 -0.558648\nH 1.401445 0.350233 -1.735125\nH 0.527461 2.333831 0.416209\nH -1.386556 1.963988 -1.344700\nH -2.507844 -0.400565 -0.862845\nH -1.244594 -1.384964 1.296877\nH 0.442769 0.439212 2.109022\n","xyz");
+	viewergrid_17467103503104272[0][1].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_17467103503104272[0][0].zoomTo();
+	viewergrid_17467103503104272[0][1].zoomTo();
+	viewergrid_17467103503104272[0][2].zoomTo();
+	viewergrid_17467103503104272[1][0].zoomTo();
+	viewergrid_17467103503104272[1][1].zoomTo();
+	viewergrid_17467103503104272[1][2].zoomTo();
+	viewergrid_17467103503104272[2][0].zoomTo();
+	viewergrid_17467103503104272[2][1].zoomTo();
+	viewergrid_17467103503104272[2][2].zoomTo();
+	viewergrid_17467103503104272[0][2].addModel("12\n\nO 0.423753 -2.493358 -1.007390\nC 0.455615 -1.616350 -0.210171\nC 1.503819 -0.683197 0.333779\nC 0.959304 0.744329 0.053556\nC 0.353474 0.981383 1.482807\nC -0.543691 0.529462 0.340147\nO -0.589861 -0.893178 0.741839\nC 0.471152 -0.532802 1.789740\nH 2.593251 -0.824067 0.366805\nH 1.325685 1.505520 -0.631357\nH 0.323202 1.835377 2.106390\nH -1.380136 0.916920 -0.144725\n","xyz");
+	viewergrid_17467103503104272[0][2].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_17467103503104272[0][0].zoomTo();
+	viewergrid_17467103503104272[0][1].zoomTo();
+	viewergrid_17467103503104272[0][2].zoomTo();
+	viewergrid_17467103503104272[1][0].zoomTo();
+	viewergrid_17467103503104272[1][1].zoomTo();
+	viewergrid_17467103503104272[1][2].zoomTo();
+	viewergrid_17467103503104272[2][0].zoomTo();
+	viewergrid_17467103503104272[2][1].zoomTo();
+	viewergrid_17467103503104272[2][2].zoomTo();
+	viewergrid_17467103503104272[1][0].addModel("16\n\nO 0.417309 -2.488443 -1.001502\nC 0.425826 -1.607142 -0.205831\nC 1.459192 -0.749094 0.477758\nC 1.385204 0.641970 -0.197147\nN 0.130219 1.305851 0.364784\nC -0.038820 0.824748 1.704264\nC -1.017226 0.475294 0.723483\nC -0.686220 -1.054796 0.831334\nC 0.551999 -0.565126 1.700023\nH 2.474996 -1.109966 0.580899\nH 2.228000 1.251863 0.096710\nH 1.339960 0.548896 -1.273843\nH -0.037301 1.537262 2.542060\nH -2.008715 0.879894 0.539587\nH -1.492387 -1.711051 1.192041\nH 0.813112 -1.094611 2.619443\n","xyz");
+	viewergrid_17467103503104272[1][0].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_17467103503104272[0][0].zoomTo();
+	viewergrid_17467103503104272[0][1].zoomTo();
+	viewergrid_17467103503104272[0][2].zoomTo();
+	viewergrid_17467103503104272[1][0].zoomTo();
+	viewergrid_17467103503104272[1][1].zoomTo();
+	viewergrid_17467103503104272[1][2].zoomTo();
+	viewergrid_17467103503104272[2][0].zoomTo();
+	viewergrid_17467103503104272[2][1].zoomTo();
+	viewergrid_17467103503104272[2][2].zoomTo();
+	viewergrid_17467103503104272[1][1].addModel("18\n\nO 0.410605 -2.474039 -0.982965\nC 0.470041 -1.606066 -0.173834\nC 1.570708 -0.838064 0.511978\nC 1.880589 0.431902 -0.344193\nC 0.599639 1.174231 0.257357\nC -0.627704 1.158501 -0.671755\nC -1.444395 -0.106574 -0.305146\nN -0.543687 -0.878265 0.589975\nC 0.483270 0.051489 1.205947\nH 2.406775 -1.335402 1.006512\nH 2.790357 0.896591 -0.011021\nH 1.940824 0.265299 -1.419333\nH 0.844349 2.181514 0.648335\nH -1.219879 2.084455 -0.489618\nH -0.369627 1.160808 -1.718447\nH -2.365561 0.134581 0.226538\nH -1.714033 -0.739053 -1.164405\nH 0.387185 0.215386 2.246326\n","xyz");
+	viewergrid_17467103503104272[1][1].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_17467103503104272[0][0].zoomTo();
+	viewergrid_17467103503104272[0][1].zoomTo();
+	viewergrid_17467103503104272[0][2].zoomTo();
+	viewergrid_17467103503104272[1][0].zoomTo();
+	viewergrid_17467103503104272[1][1].zoomTo();
+	viewergrid_17467103503104272[1][2].zoomTo();
+	viewergrid_17467103503104272[2][0].zoomTo();
+	viewergrid_17467103503104272[2][1].zoomTo();
+	viewergrid_17467103503104272[2][2].zoomTo();
+	viewergrid_17467103503104272[1][2].addModel("13\n\nO 0.411021 -2.491205 -0.986321\nC 0.447608 -1.613007 -0.186597\nC 1.477855 -0.633089 0.317535\nC 2.811382 -0.396043 -0.232563\nC 3.807312 0.131245 0.689731\nC 4.614767 0.540267 1.452800\nC 0.401736 0.158655 0.959910\nN -0.627636 -0.781994 0.641630\nH 3.565458 0.243008 -0.044935\nH 5.432491 0.910287 2.205769\nH 0.519104 0.273807 2.038237\nH 0.255693 1.138050 0.519134\nH -1.347104 -0.465024 0.013832\n","xyz");
+	viewergrid_17467103503104272[1][2].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_17467103503104272[0][0].zoomTo();
+	viewergrid_17467103503104272[0][1].zoomTo();
+	viewergrid_17467103503104272[0][2].zoomTo();
+	viewergrid_17467103503104272[1][0].zoomTo();
+	viewergrid_17467103503104272[1][1].zoomTo();
+	viewergrid_17467103503104272[1][2].zoomTo();
+	viewergrid_17467103503104272[2][0].zoomTo();
+	viewergrid_17467103503104272[2][1].zoomTo();
+	viewergrid_17467103503104272[2][2].zoomTo();
+	viewergrid_17467103503104272[2][0].addModel("16\n\nO 0.413819 -2.489671 -0.998764\nC 0.464359 -1.588826 -0.225795\nC 1.451078 -0.504875 0.152057\nC 1.454993 0.677216 -0.870442\nC 0.281333 1.398946 -0.023163\nC 0.325063 0.183718 0.968663\nC -0.628035 -1.004863 0.751783\nC -1.981201 -0.750860 0.297360\nN -3.023831 -0.482506 -0.107382\nH 2.423157 -0.806620 0.542293\nH 2.382664 1.228224 -0.872712\nH 1.209232 0.364334 -1.882408\nH 0.623345 2.339193 0.417457\nH -0.643988 1.535774 -0.519577\nH 0.436844 0.426437 2.032878\nH -0.663809 -1.684888 1.614213\n","xyz");
+	viewergrid_17467103503104272[2][0].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_17467103503104272[0][0].zoomTo();
+	viewergrid_17467103503104272[0][1].zoomTo();
+	viewergrid_17467103503104272[0][2].zoomTo();
+	viewergrid_17467103503104272[1][0].zoomTo();
+	viewergrid_17467103503104272[1][1].zoomTo();
+	viewergrid_17467103503104272[1][2].zoomTo();
+	viewergrid_17467103503104272[2][0].zoomTo();
+	viewergrid_17467103503104272[2][1].zoomTo();
+	viewergrid_17467103503104272[2][2].zoomTo();
+	viewergrid_17467103503104272[2][1].addModel("16\n\nO 0.402008 -2.497755 -0.993912\nC 0.442966 -1.621472 -0.190941\nC 1.522222 -0.824367 0.496130\nC 1.799661 0.415986 -0.413874\nC 0.481383 1.154896 0.130114\nC -0.744749 1.067006 -0.766706\nC -1.394690 -0.088445 -0.529075\nN -0.663224 -0.866631 0.452942\nC 0.342259 0.052696 1.101291\nH 2.351653 -1.291757 1.012120\nH 2.688306 0.934930 -0.064812\nH 1.891223 0.209625 -1.474301\nH 0.690908 2.167591 0.501816\nH -1.029087 1.842762 -1.448784\nH -2.310895 -0.482609 -0.971909\nH 0.157223 0.201176 2.163950\n","xyz");
+	viewergrid_17467103503104272[2][1].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_17467103503104272[0][0].zoomTo();
+	viewergrid_17467103503104272[0][1].zoomTo();
+	viewergrid_17467103503104272[0][2].zoomTo();
+	viewergrid_17467103503104272[1][0].zoomTo();
+	viewergrid_17467103503104272[1][1].zoomTo();
+	viewergrid_17467103503104272[1][2].zoomTo();
+	viewergrid_17467103503104272[2][0].zoomTo();
+	viewergrid_17467103503104272[2][1].zoomTo();
+	viewergrid_17467103503104272[2][2].zoomTo();
+	viewergrid_17467103503104272[2][2].addModel("16\n\nO 0.417417 -2.514760 -0.995302\nC 0.464737 -1.634204 -0.202871\nC 1.408750 -0.507570 0.149249\nC 1.033951 0.744037 -0.757546\nC -0.155805 1.126019 0.239743\nC -1.560735 0.725235 -0.229065\nC -1.769850 -0.565783 0.067106\nN -0.626284 -1.136480 0.761795\nC 0.270494 0.014128 1.153686\nH 2.460380 -0.664561 0.375829\nH 1.831188 1.461956 -0.735832\nH 0.777628 0.480286 -1.777399\nH -0.075762 2.151248 0.600504\nH -2.237368 1.380975 -0.726798\nH -2.625754 -1.192580 -0.154976\nH 0.387013 0.132055 2.231882\n","xyz");
+	viewergrid_17467103503104272[2][2].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_17467103503104272[0][0].zoomTo();
+	viewergrid_17467103503104272[0][1].zoomTo();
+	viewergrid_17467103503104272[0][2].zoomTo();
+	viewergrid_17467103503104272[1][0].zoomTo();
+	viewergrid_17467103503104272[1][1].zoomTo();
+	viewergrid_17467103503104272[1][2].zoomTo();
+	viewergrid_17467103503104272[2][0].zoomTo();
+	viewergrid_17467103503104272[2][1].zoomTo();
+	viewergrid_17467103503104272[2][2].zoomTo();
+viewergrid_17467103503104272[2][2].render();
+viewergrid_17467103503104272[2][1].render();
+viewergrid_17467103503104272[2][0].render();
+viewergrid_17467103503104272[1][2].render();
+viewergrid_17467103503104272[1][1].render();
+viewergrid_17467103503104272[1][0].render();
+viewergrid_17467103503104272[0][2].render();
+viewergrid_17467103503104272[0][1].render();
+viewergrid_17467103503104272[0][0].render();
+var png = viewer_17467103503104272.pngURI();
+document.getElementById("img_A").src = png;
+});
+</script>

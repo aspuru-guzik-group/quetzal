@@ -1,0 +1,153 @@
+<img id="img_A"><script src="https://3Dmol.org/build/3Dmol-min.js"></script><script src="https://3Dmol.org/build/3Dmol.ui-min.js"></script><div id="3dmolviewer_1746710350289212"  style="position: relative; width: 2880px; height: 2880px;">
+        <p id="3dmolwarning_1746710350289212" style="background-color:#ffcccc;color:black">3Dmol.js failed to load for some reason.  Please check your browser console for error messages.<br></p>
+        </div>
+<script>
+
+var loadScriptAsync = function(uri){
+  return new Promise((resolve, reject) => {
+    //this is to ignore the existence of requirejs amd
+    var savedexports, savedmodule;
+    if (typeof exports !== 'undefined') savedexports = exports;
+    else exports = {}
+    if (typeof module !== 'undefined') savedmodule = module;
+    else module = {}
+
+    var tag = document.createElement('script');
+    tag.src = uri;
+    tag.async = true;
+    tag.onload = () => {
+        exports = savedexports;
+        module = savedmodule;
+        resolve();
+    };
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+});
+};
+
+if(typeof $3Dmolpromise === 'undefined') {
+$3Dmolpromise = null;
+  $3Dmolpromise = loadScriptAsync('https://cdnjs.cloudflare.com/ajax/libs/3Dmol/2.4.2/3Dmol-min.js');
+}
+
+var viewer_1746710350289212 = null;
+var warn = document.getElementById("3dmolwarning_1746710350289212");
+if(warn) {
+    warn.parentNode.removeChild(warn);
+}
+$3Dmolpromise.then(function() {
+var viewergrid_1746710350289212 = null;
+viewergrid_1746710350289212 = $3Dmol.createViewerGrid(document.getElementById("3dmolviewer_1746710350289212"),{rows: 3, cols: 3, control_all: true},{backgroundColor:"white"});
+viewer_1746710350289212 = viewergrid_1746710350289212[0][0];
+viewergrid_1746710350289212[0][0].zoomTo();viewergrid_1746710350289212[0][1].zoomTo();viewergrid_1746710350289212[0][2].zoomTo();viewergrid_1746710350289212[1][0].zoomTo();viewergrid_1746710350289212[1][1].zoomTo();viewergrid_1746710350289212[1][2].zoomTo();viewergrid_1746710350289212[2][0].zoomTo();viewergrid_1746710350289212[2][1].zoomTo();viewergrid_1746710350289212[2][2].zoomTo();	viewergrid_1746710350289212[0][0].addModel("19\n\nO -3.541390 -0.763382 0.264117\nC -2.808401 0.201314 0.276829\nC -1.371328 0.154689 -0.042561\nC -0.687188 1.305932 -0.038094\nC 0.805705 1.427846 -0.303919\nC 1.559208 0.111479 -0.232186\nC 1.456497 -0.736057 0.996438\nC 0.791126 -1.161636 -0.273280\nC -0.712599 -1.163064 -0.415165\nH -3.190926 1.194217 0.519375\nH -1.232413 2.241408 0.194668\nH 0.907279 1.883054 -1.316189\nH 1.207663 2.159548 0.356630\nH 2.523885 0.137103 -0.749702\nH 2.339654 -1.257149 1.324525\nH 0.816274 -0.396664 1.827022\nH 1.257179 -1.994498 -0.804795\nH -1.188004 -1.973764 0.185352\nH -0.995056 -1.386177 -1.444989\n","xyz");
+	viewergrid_1746710350289212[0][0].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_1746710350289212[0][0].zoomTo();
+	viewergrid_1746710350289212[0][1].zoomTo();
+	viewergrid_1746710350289212[0][2].zoomTo();
+	viewergrid_1746710350289212[1][0].zoomTo();
+	viewergrid_1746710350289212[1][1].zoomTo();
+	viewergrid_1746710350289212[1][2].zoomTo();
+	viewergrid_1746710350289212[2][0].zoomTo();
+	viewergrid_1746710350289212[2][1].zoomTo();
+	viewergrid_1746710350289212[2][2].zoomTo();
+	viewergrid_1746710350289212[0][1].addModel("21\n\nO -3.531885 -0.745900 0.251052\nC -2.799088 0.213008 0.274466\nC -1.351006 0.164010 0.000094\nC -0.689469 1.330434 0.033545\nC 0.799177 1.531920 -0.184160\nC 1.741668 0.638427 0.639901\nC 1.698166 -0.852124 0.268339\nC 0.394274 -1.559514 0.619735\nC -0.802641 -1.194852 -0.276529\nH -3.196533 1.212035 0.498919\nH -1.280514 2.241752 0.248185\nH 1.004663 1.386670 -1.265648\nH 1.019647 2.577995 0.002651\nH 2.765325 1.017716 0.478388\nH 1.526869 0.772318 1.695546\nH 1.876843 -0.976122 -0.794095\nH 2.511059 -1.373456 0.771707\nH 0.550246 -2.668643 0.522046\nH 0.134967 -1.381866 1.679847\nH -1.587804 -1.931683 -0.099715\nH -0.510653 -1.268913 -1.325948\n","xyz");
+	viewergrid_1746710350289212[0][1].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_1746710350289212[0][0].zoomTo();
+	viewergrid_1746710350289212[0][1].zoomTo();
+	viewergrid_1746710350289212[0][2].zoomTo();
+	viewergrid_1746710350289212[1][0].zoomTo();
+	viewergrid_1746710350289212[1][1].zoomTo();
+	viewergrid_1746710350289212[1][2].zoomTo();
+	viewergrid_1746710350289212[2][0].zoomTo();
+	viewergrid_1746710350289212[2][1].zoomTo();
+	viewergrid_1746710350289212[2][2].zoomTo();
+	viewergrid_1746710350289212[0][2].addModel("16\n\nO -3.560068 -0.747206 0.240940\nC -2.824026 0.208612 0.275217\nC -1.366326 0.148674 0.052154\nC -0.701588 1.309498 0.107283\nC 0.785307 1.547620 -0.054268\nO 1.519788 0.721018 -0.938848\nC 1.487429 -0.651936 -0.881770\nN 0.584131 -1.437174 -0.540722\nC -0.808881 -1.216460 -0.226121\nH -3.228691 1.210893 0.461134\nH -1.285436 2.217693 0.359672\nH 0.921998 2.572538 -0.441184\nH 1.225515 1.507895 0.928922\nH 2.430875 -1.023917 -1.266310\nH -1.057410 -1.837754 0.629607\nH -1.412248 -1.675798 -1.032599\n","xyz");
+	viewergrid_1746710350289212[0][2].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_1746710350289212[0][0].zoomTo();
+	viewergrid_1746710350289212[0][1].zoomTo();
+	viewergrid_1746710350289212[0][2].zoomTo();
+	viewergrid_1746710350289212[1][0].zoomTo();
+	viewergrid_1746710350289212[1][1].zoomTo();
+	viewergrid_1746710350289212[1][2].zoomTo();
+	viewergrid_1746710350289212[2][0].zoomTo();
+	viewergrid_1746710350289212[2][1].zoomTo();
+	viewergrid_1746710350289212[2][2].zoomTo();
+	viewergrid_1746710350289212[1][0].addModel("16\n\nO -3.532139 -0.756218 0.247107\nC -2.819375 0.214850 0.267677\nC -1.365321 0.196600 -0.019101\nC -0.729871 1.373294 -0.001352\nC 0.740712 1.624792 -0.245621\nO 1.409240 0.786840 -1.165289\nC 1.383970 -0.576851 -1.097476\nN 0.515705 -1.396264 -0.729497\nC -0.825225 -1.171969 -0.292381\nH -3.226909 1.213452 0.490678\nH -1.313148 2.271880 0.277153\nH 0.854671 2.642949 -0.642526\nH 1.236445 1.584828 0.708931\nH 2.315420 -0.948224 -1.524410\nH -0.968539 -1.754769 0.611565\nH -1.498814 -1.666306 -1.010648\n","xyz");
+	viewergrid_1746710350289212[1][0].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_1746710350289212[0][0].zoomTo();
+	viewergrid_1746710350289212[0][1].zoomTo();
+	viewergrid_1746710350289212[0][2].zoomTo();
+	viewergrid_1746710350289212[1][0].zoomTo();
+	viewergrid_1746710350289212[1][1].zoomTo();
+	viewergrid_1746710350289212[1][2].zoomTo();
+	viewergrid_1746710350289212[2][0].zoomTo();
+	viewergrid_1746710350289212[2][1].zoomTo();
+	viewergrid_1746710350289212[2][2].zoomTo();
+	viewergrid_1746710350289212[1][1].addModel("16\n\nO -3.534154 -0.760082 0.239409\nC -2.808742 0.199822 0.264720\nC -1.341892 0.147750 0.046378\nC -0.683345 1.313516 0.084847\nC 0.813531 1.538163 -0.082244\nO 1.528228 0.717171 -0.996609\nC 1.486680 -0.654185 -0.965840\nN 0.590717 -1.449433 -0.625485\nC -0.762924 -1.225207 -0.226016\nH -3.206449 1.206956 0.438999\nH -1.260670 2.224197 0.334790\nH 0.965607 2.564532 -0.445707\nH 1.260177 1.467375 0.890680\nH 2.425979 -1.030245 -1.379011\nH -0.943308 -1.809555 0.669593\nH -1.409253 -1.721093 -0.976298\n","xyz");
+	viewergrid_1746710350289212[1][1].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_1746710350289212[0][0].zoomTo();
+	viewergrid_1746710350289212[0][1].zoomTo();
+	viewergrid_1746710350289212[0][2].zoomTo();
+	viewergrid_1746710350289212[1][0].zoomTo();
+	viewergrid_1746710350289212[1][1].zoomTo();
+	viewergrid_1746710350289212[1][2].zoomTo();
+	viewergrid_1746710350289212[2][0].zoomTo();
+	viewergrid_1746710350289212[2][1].zoomTo();
+	viewergrid_1746710350289212[2][2].zoomTo();
+	viewergrid_1746710350289212[1][2].addModel("17\n\nO -3.529259 -0.767332 0.249445\nC -2.805699 0.198144 0.266011\nC -1.353706 0.159850 -0.028013\nC -0.714762 1.337129 -0.004358\nC 0.760371 1.611653 -0.248474\nO 1.681052 0.603576 0.036070\nC 1.533720 -0.615955 -0.682837\nO 0.568927 -1.431967 -0.104533\nC -0.772788 -1.172551 -0.475130\nH -3.205432 1.191156 0.498149\nH -1.319946 2.236660 0.187824\nH 0.855001 1.944513 -1.310094\nH 1.043792 2.469014 0.346212\nH 1.299974 -0.400528 -1.758119\nH 2.491910 -1.118846 -0.616124\nH -1.391562 -1.973042 -0.011087\nH -0.904817 -1.269693 -1.579950\n","xyz");
+	viewergrid_1746710350289212[1][2].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_1746710350289212[0][0].zoomTo();
+	viewergrid_1746710350289212[0][1].zoomTo();
+	viewergrid_1746710350289212[0][2].zoomTo();
+	viewergrid_1746710350289212[1][0].zoomTo();
+	viewergrid_1746710350289212[1][1].zoomTo();
+	viewergrid_1746710350289212[1][2].zoomTo();
+	viewergrid_1746710350289212[2][0].zoomTo();
+	viewergrid_1746710350289212[2][1].zoomTo();
+	viewergrid_1746710350289212[2][2].zoomTo();
+	viewergrid_1746710350289212[2][0].addModel("14\n\nC -3.324428 -0.648988 0.165522\nC -2.488755 0.600553 0.244057\nC -1.293819 0.666281 0.916177\nO -0.820498 -0.390983 1.555942\nO -0.537866 1.754241 1.008550\nC -0.938524 3.010473 0.336689\nO -0.147525 3.910551 0.489573\nN -2.105143 2.990136 -0.328280\nC -2.811757 1.855767 -0.385643\nH -4.247838 -0.482202 -0.396084\nH -2.795174 -1.454659 -0.314612\nH -3.625263 -0.984795 1.162482\nH 0.000422 -0.137003 1.942412\nH -3.736058 1.907918 -0.971575\n","xyz");
+	viewergrid_1746710350289212[2][0].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_1746710350289212[0][0].zoomTo();
+	viewergrid_1746710350289212[0][1].zoomTo();
+	viewergrid_1746710350289212[0][2].zoomTo();
+	viewergrid_1746710350289212[1][0].zoomTo();
+	viewergrid_1746710350289212[1][1].zoomTo();
+	viewergrid_1746710350289212[1][2].zoomTo();
+	viewergrid_1746710350289212[2][0].zoomTo();
+	viewergrid_1746710350289212[2][1].zoomTo();
+	viewergrid_1746710350289212[2][2].zoomTo();
+	viewergrid_1746710350289212[2][1].addModel("21\n\nO -3.530443 -0.749772 0.246216\nC -2.801411 0.207883 0.269280\nC -1.335886 0.150034 0.041828\nC -0.667713 1.303302 0.056696\nC 0.828260 1.485963 -0.118316\nC 1.719706 0.635020 0.790441\nC 1.720892 -0.873707 0.464116\nC 0.394350 -1.598263 0.744535\nC -0.760930 -1.223514 -0.218805\nH -3.198982 1.222717 0.448215\nH -1.259469 2.219836 0.228842\nH 1.066435 1.277794 -1.174128\nH 1.046540 2.536257 0.017786\nH 2.748999 1.017975 0.688485\nH 1.428163 0.799164 1.829089\nH 1.980361 -1.027662 -0.575934\nH 2.507286 -1.358325 1.042317\nH 0.559779 -2.698649 0.645018\nH 0.075982 -1.426039 1.784710\nH -1.555815 -1.949964 -0.088303\nH -0.416598 -1.286443 -1.260611\n","xyz");
+	viewergrid_1746710350289212[2][1].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_1746710350289212[0][0].zoomTo();
+	viewergrid_1746710350289212[0][1].zoomTo();
+	viewergrid_1746710350289212[0][2].zoomTo();
+	viewergrid_1746710350289212[1][0].zoomTo();
+	viewergrid_1746710350289212[1][1].zoomTo();
+	viewergrid_1746710350289212[1][2].zoomTo();
+	viewergrid_1746710350289212[2][0].zoomTo();
+	viewergrid_1746710350289212[2][1].zoomTo();
+	viewergrid_1746710350289212[2][2].zoomTo();
+	viewergrid_1746710350289212[2][2].addModel("21\n\nO -3.527637 -0.750287 0.242014\nC -2.810240 0.224043 0.247963\nC -1.372339 0.199416 -0.079241\nC -0.716408 1.367938 -0.059787\nC 0.746525 1.595925 -0.339133\nC 1.729927 0.676123 0.407275\nC 1.694664 -0.804267 -0.030101\nC 0.413798 -1.544114 0.312848\nC -0.813495 -1.121019 -0.495601\nH -3.206239 1.214432 0.498963\nH -1.310710 2.258019 0.209555\nH 0.901749 1.487629 -1.431445\nH 0.964944 2.637834 -0.130306\nH 2.739779 1.068582 0.226062\nH 1.553471 0.755194 1.483822\nH 1.872141 -0.869418 -1.103015\nH 2.532756 -1.324435 0.438783\nH 0.571532 -2.644619 0.128636\nH 0.190574 -1.446424 1.390765\nH -1.589177 -1.870523 -0.354451\nH -0.565610 -1.110031 -1.563604\n","xyz");
+	viewergrid_1746710350289212[2][2].setStyle({"model": -1},{"stick": {"radius": 0.2}, "sphere": {"scale": 0.2}});
+	viewergrid_1746710350289212[0][0].zoomTo();
+	viewergrid_1746710350289212[0][1].zoomTo();
+	viewergrid_1746710350289212[0][2].zoomTo();
+	viewergrid_1746710350289212[1][0].zoomTo();
+	viewergrid_1746710350289212[1][1].zoomTo();
+	viewergrid_1746710350289212[1][2].zoomTo();
+	viewergrid_1746710350289212[2][0].zoomTo();
+	viewergrid_1746710350289212[2][1].zoomTo();
+	viewergrid_1746710350289212[2][2].zoomTo();
+viewergrid_1746710350289212[2][2].render();
+viewergrid_1746710350289212[2][1].render();
+viewergrid_1746710350289212[2][0].render();
+viewergrid_1746710350289212[1][2].render();
+viewergrid_1746710350289212[1][1].render();
+viewergrid_1746710350289212[1][0].render();
+viewergrid_1746710350289212[0][2].render();
+viewergrid_1746710350289212[0][1].render();
+viewergrid_1746710350289212[0][0].render();
+var png = viewer_1746710350289212.pngURI();
+document.getElementById("img_A").src = png;
+});
+</script>
