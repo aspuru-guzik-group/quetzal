@@ -1,8 +1,9 @@
 # Quetzal
 
-Scalable Autoregressive 3D Molecule Generation
+[![arXiv](https://img.shields.io/badge/arXiv%20paper-2505.13791-b31b1b.svg)](https://arxiv.org/abs/2505.13791)&nbsp;
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aspuru-guzik-group/quetzal/blob/main/colab.ipynb)
 
-[arXiv paper](https://arxiv.org/abs/2505.13791) | [Colab demo](...)
+Code for [Scalable Autoregressive 3D Molecule Generation](https://arxiv.org/abs/2505.13791)
 
 ![Animated Molecule Generation](figures/anim.gif)
 
@@ -13,6 +14,8 @@ mamba create -f environment.yml
 
 This environment was prepared via:
 ```
+mamba create -n quetzal python=3.10
+mamba activate quetzal
 mamba install c-compiler cxx-compiler # needed for torch.compile
 pip install torch==2.6 lightning==2.5.0.post0 rdkit==2023.03.3 jupyter notebook ipywidgets scipy "numpy<2" matplotlib tqdm pandas wandb==0.18.7 seaborn msgpack py3Dmol torchdata
 ```
@@ -38,7 +41,7 @@ wget https://huggingface.co/auhcheng/quetzal/resolve/main/geom.ckpt # best geom 
 ```
 You can find the rest of the checkpoints for ablation studies [here](https://huggingface.co/auhcheng/quetzal/tree/main).
 
-Start playing around with the model in `play.ipynb`!
+Start playing around with the model in [`play.ipynb`](./play.ipynb)!
 
 ## Training and evaluation
 
